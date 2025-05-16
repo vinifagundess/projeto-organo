@@ -1,10 +1,10 @@
 .footer {
-    background: #6278F7;
+    background: #9C60FB;
     color: #FFF;
-    padding: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 65px;
 }
 
 .footer ul li {
@@ -14,4 +14,8 @@
 
 .footer ul li:last-child {
     margin-right: 0;
+}
+
+.Logo2{
+    width: 200px;
 }
