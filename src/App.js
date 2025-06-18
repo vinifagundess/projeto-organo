@@ -1,70 +1,250 @@
-import { useState } from 'react';
-import Banner from './componentes/Banner';
-import Formulario from './componentes/Formulario';
-import Time from './componentes/Time';
-import Rodape from './componentes/Rodape';
+import { useState } from "react";
+import Banner from "./componentes/Banner";
+import Formulario from "./componentes/Formulario";
+import Rodape from "./componentes/Rodape";
+import Time from "./componentes/Time";
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
 
-  const times = [
+  const [times, setTimes] = useState([
     {
+      id: uuidv4(),
       nome: 'Loud',
-      corPrimaria: '#57C278',
-      corSecundaria: '#D9F7E9'
+      cor: '#57C278'
     },
     {
+      id: uuidv4(),
       nome: 'G3X',
-      corPrimaria: '#82CFFA',
-      corSecundaria: '#E8F8FF'
+      cor: '#82CFFA'
     },
     {
+      id: uuidv4(),
       nome: 'Furia',
-      corPrimaria: '#141414',
-      corSecundaria: '#a09e9e'
+      cor: '#141414'
     },
     {
+      id: uuidv4(),
       nome: 'W7M',
-      corPrimaria: '#E06B69',
-      corSecundaria: '#FDE7E8'
+      cor: '#E06B69'
     },
     {
-      nome: 'SportBoys',
-      corPrimaria: '#DB6EBF',
-      corSecundaria: '#FAE9F5'
+      id: uuidv4(),
+       nome: 'SportBoys',
+      cor: '#DB6EBF'
     },
     {
+      id: uuidv4(),
       nome: 'Marines',
-      corPrimaria: '#FFBA05',
-      corSecundaria: '#FFF5D9'
+      cor: '#FFBA05'
     },
     {
+      id: uuidv4(),
       nome: 'Los Grandes',
-      corPrimaria: '#FF8A29',
-      corSecundaria: '#FFEEDF'
-    }
+      cor: '#FF8A29'
+    },
+  ]);
+
+  const inicial = [
+    {
+      id: uuidv4(),
+      nome: 'Lucas Andrade',
+      cargo: 'Content Creator',
+      imagem: 'https://randomuser.me/api/portraits/men/32.jpg',
+      time: times[0].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Marina Costa',
+      cargo: 'Pro Player',
+      imagem: 'https://randomuser.me/api/portraits/women/44.jpg',
+      time: times[0].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Felipe Duarte',
+      cargo: 'Social Media Manager',
+      imagem: '	https://randomuser.me/api/portraits/men/65.jpg',
+      time: times[0].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Aline Martins',
+      cargo: 'Video Editor',
+      imagem: 'https://randomuser.me/api/portraits/women/68.jpg',
+      time: times[0].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Lucas Andrade',
+      cargo: 'Content Creator',
+      imagem: 'https://randomuser.me/api/portraits/men/32.jpg',
+      time: times[1].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Marina Costa',
+      cargo: 'Pro Player',
+      imagem: 'https://randomuser.me/api/portraits/women/44.jpg',
+      time: times[1].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Felipe Duarte',
+      cargo: 'Social Media Manager',
+      imagem: '	https://randomuser.me/api/portraits/men/65.jpg',
+      time: times[1].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Aline Martins',
+      cargo: 'Video Editor',
+      imagem: 'https://randomuser.me/api/portraits/women/68.jpg',
+      time: times[1].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Lucas Andrade',
+      cargo: 'Content Creator',
+      imagem: 'https://randomuser.me/api/portraits/men/32.jpg',
+      time: times[2].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Marina Costa',
+      cargo: 'Pro Player',
+      imagem: 'https://randomuser.me/api/portraits/women/44.jpg',
+      time: times[2].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Felipe Duarte',
+      cargo: 'Social Media Manager',
+      imagem: '	https://randomuser.me/api/portraits/men/65.jpg',
+      time: times[2].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Aline Martins',
+      cargo: 'Video Editor',
+      imagem: 'https://randomuser.me/api/portraits/women/68.jpg',
+      time: times[2].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Lucas Andrade',
+      cargo: 'Content Creator',
+      imagem: 'https://randomuser.me/api/portraits/men/32.jpg',
+      time: times[3].nome
+    },
+    {
+      nome: 'Marina Costa',
+      cargo: 'Pro Player',
+      imagem: 'https://randomuser.me/api/portraits/women/44.jpg',
+      time: times[3].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Felipe Duarte',
+      cargo: 'Social Media Manager',
+      imagem: '	https://randomuser.me/api/portraits/men/65.jpg',
+      time: times[3].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Aline Martins',
+      cargo: 'Video Editor',
+      imagem: 'https://randomuser.me/api/portraits/women/68.jpg',
+      time: times[3].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Lucas Andrade',
+      cargo: 'Content Creator',
+      imagem: 'https://randomuser.me/api/portraits/men/32.jpg',
+      time: times[4].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Marina Costa',
+      cargo: 'Pro Player',
+      imagem: 'https://randomuser.me/api/portraits/women/44.jpg',
+      time: times[4].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Felipe Duarte',
+      cargo: 'Social Media Manager',
+      imagem: '	https://randomuser.me/api/portraits/men/65.jpg',
+      time: times[4].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Aline Martins',
+      cargo: 'Video Editor',
+      imagem: 'https://randomuser.me/api/portraits/women/68.jpg',
+      time: times[4].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Lucas Andrade',
+      cargo: 'Content Creator',
+      imagem: 'https://randomuser.me/api/portraits/men/32.jpg',
+      time: times[5].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Marina Costa',
+      cargo: 'Pro Player',
+      imagem: 'https://randomuser.me/api/portraits/women/44.jpg',
+      time: times[5].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Felipe Duarte',
+      cargo: 'Social Media Manager',
+      imagem: '	https://randomuser.me/api/portraits/men/65.jpg',
+      time: times[5].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Aline Martins',
+      cargo: 'Video Editor',
+      imagem: 'https://randomuser.me/api/portraits/women/68.jpg',
+      time: times[5].nome
+    },
   ]
 
-  const [colaboradores, setColaboradores] = useState([])
+  const [colaboradores, setColaboradores] = useState(inicial)
 
-  const aoNovoColaboradorAdicionado = (colaborador) => {
-    debugger
-    setColaboradores([...colaboradores, colaborador])
+  function deletarColaborador(id) {
+    setColaboradores(colaboradores.filter(colaborador => colaborador.id !== id));
   }
 
+  function mudarCor(cor, id) {
+    setTimes(times.map(time => {
+      if(time.id === id) {
+        time.cor = cor;
+      }
+      return time;
+    }));
+  }
+
+  function cadastrarTime({ nome, cor }) {
+    setTimes([...times, { nome, cor, id: uuidv4() }])
+  }
+
+
   return (
-    <div className="App">
+    <div>
       <Banner />
-      <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}/>
-      {times.map(time => <Time 
-        key={time.nome} 
-        nome={time.nome} 
-        corPrimaria={time.corPrimaria} 
-        corSecundaria={time.corSecundaria} 
-        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
-      />)}   
+      <Formulario aoCriarTime={cadastrarTime} times={times.map(time => time.nome)} aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])} />
+      <section className="times">
+        <h1>Minha organização</h1>
+        {times.map((time, indice) => <Time mudarCor={mudarCor} key={indice} time={time} colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} aoDeletar={deletarColaborador} />)}
+      </section>
       <Rodape />
     </div>
-    
   );
 }
 
