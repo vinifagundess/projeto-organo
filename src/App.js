@@ -48,6 +48,7 @@ function App() {
   const inicial = [
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Lucas Andrade',
       cargo: 'Content Creator',
       imagem: 'https://randomuser.me/api/portraits/men/32.jpg',
@@ -55,6 +56,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Marina Costa',
       cargo: 'Pro Player',
       imagem: 'https://randomuser.me/api/portraits/women/44.jpg',
@@ -62,6 +64,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Felipe Duarte',
       cargo: 'Social Media Manager',
       imagem: '	https://randomuser.me/api/portraits/men/65.jpg',
@@ -69,13 +72,15 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Aline Martins',
-      cargo: 'Video Editor',
+      cargo: 'Video Editor ',
       imagem: 'https://randomuser.me/api/portraits/women/68.jpg',
       time: times[0].nome
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Lucas Andrade',
       cargo: 'Content Creator',
       imagem: 'https://randomuser.me/api/portraits/men/32.jpg',
@@ -83,6 +88,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Marina Costa',
       cargo: 'Pro Player',
       imagem: 'https://randomuser.me/api/portraits/women/44.jpg',
@@ -90,6 +96,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Felipe Duarte',
       cargo: 'Social Media Manager',
       imagem: '	https://randomuser.me/api/portraits/men/65.jpg',
@@ -97,13 +104,15 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Aline Martins',
-      cargo: 'Video Editor',
+      cargo: 'Video Editor ',
       imagem: 'https://randomuser.me/api/portraits/women/68.jpg',
       time: times[1].nome
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Lucas Andrade',
       cargo: 'Content Creator',
       imagem: 'https://randomuser.me/api/portraits/men/32.jpg',
@@ -111,6 +120,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Marina Costa',
       cargo: 'Pro Player',
       imagem: 'https://randomuser.me/api/portraits/women/44.jpg',
@@ -118,6 +128,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Felipe Duarte',
       cargo: 'Social Media Manager',
       imagem: '	https://randomuser.me/api/portraits/men/65.jpg',
@@ -125,19 +136,23 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Aline Martins',
-      cargo: 'Video Editor',
+      cargo: 'Video Editor ',
       imagem: 'https://randomuser.me/api/portraits/women/68.jpg',
       time: times[2].nome
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Lucas Andrade',
       cargo: 'Content Creator',
       imagem: 'https://randomuser.me/api/portraits/men/32.jpg',
       time: times[3].nome
     },
     {
+      id: uuidv4(),
+      favorito: false,
       nome: 'Marina Costa',
       cargo: 'Pro Player',
       imagem: 'https://randomuser.me/api/portraits/women/44.jpg',
@@ -145,6 +160,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Felipe Duarte',
       cargo: 'Social Media Manager',
       imagem: '	https://randomuser.me/api/portraits/men/65.jpg',
@@ -152,13 +168,15 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Aline Martins',
-      cargo: 'Video Editor',
+      cargo: 'Video Editor ',
       imagem: 'https://randomuser.me/api/portraits/women/68.jpg',
       time: times[3].nome
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Lucas Andrade',
       cargo: 'Content Creator',
       imagem: 'https://randomuser.me/api/portraits/men/32.jpg',
@@ -166,6 +184,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Marina Costa',
       cargo: 'Pro Player',
       imagem: 'https://randomuser.me/api/portraits/women/44.jpg',
@@ -173,6 +192,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Felipe Duarte',
       cargo: 'Social Media Manager',
       imagem: '	https://randomuser.me/api/portraits/men/65.jpg',
@@ -180,13 +200,15 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Aline Martins',
-      cargo: 'Video Editor',
+      cargo: 'Video Editor ',
       imagem: 'https://randomuser.me/api/portraits/women/68.jpg',
       time: times[4].nome
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Lucas Andrade',
       cargo: 'Content Creator',
       imagem: 'https://randomuser.me/api/portraits/men/32.jpg',
@@ -194,6 +216,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Marina Costa',
       cargo: 'Pro Player',
       imagem: 'https://randomuser.me/api/portraits/women/44.jpg',
@@ -201,6 +224,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Felipe Duarte',
       cargo: 'Social Media Manager',
       imagem: '	https://randomuser.me/api/portraits/men/65.jpg',
@@ -208,8 +232,9 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'Aline Martins',
-      cargo: 'Video Editor',
+      cargo: 'Video Editor ',
       imagem: 'https://randomuser.me/api/portraits/women/68.jpg',
       time: times[5].nome
     },
@@ -234,6 +259,13 @@ function App() {
     setTimes([...times, { nome, cor, id: uuidv4() }])
   }
 
+ function resolverFavorito(id) {
+    setColaboradores(colaboradores.map(colaborador => {
+      if(colaborador.id === id) colaborador.favorito = !colaborador.favorito;
+      return colaborador;
+    }))
+  }
+
 
   return (
     <div>
@@ -241,7 +273,7 @@ function App() {
       <Formulario aoCriarTime={cadastrarTime} times={times.map(time => time.nome)} aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])} />
       <section className="times">
         <h1>Minha organização</h1>
-        {times.map((time, indice) => <Time mudarCor={mudarCor} key={indice} time={time} colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} aoDeletar={deletarColaborador} />)}
+        {times.map((time, indice) => <Time aoFavoritar={resolverFavorito} mudarCor={mudarCor} key={indice} time={time} colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} aoDeletar={deletarColaborador} />)}
       </section>
       <Rodape />
     </div>
